@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#022b00"/>
+
+    <title>youjei</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon-180.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <!-- navbar desktop -->
+    <nav class="navbar">
+      <img src="youjei.png" alt="youjei" class="logo" />
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <div class="dropdown">
+          <a href="html/allproduct.html" class="shop-link">SHOP</a>
+          <span class="dropbtn" tabindex="0">
+            <i class="fas fa-angle-down fa-xs"></i>
+          </span>
+          <div class="dropdown-content" id="dropdownMenu">
+            <a href="product/hat.html">Hat</a>
+            <a href="product/t-shirt.html">T-Shirt</a>
+            <a href="product/sweater.html">Sweater</a>
+            <a href="product/jacket.html">Jacket</a>
+            <a href="product/pants.html">Pants</a>
+            <a href="product/boots.html">Boots</a>
+            <a href="product/handmade.html">Handmade</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" class="search-btn"><i class="fas fa-search fa-2x"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <a href="#"><i class="fas fa-heart fa-2x"></i></a>
+        <a href="#" class="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
+      </div>
+    </nav>
+    <!-- navbar mobile -->
+    <nav>
+      <div class="mobile-bottom-bar">
+      <form class="mobile-search-form">
+        <input type="text" placeholder="Cari..." />
+        <button type="submit">
+          <i class="fas fa-search" style="color: white"></i>
+        </button>
+      </form>
+      <a href="#" class="hamburger-menu" id="mobileMenuBtn">
+        <i class="fas fa-bars fa-2x" id="menuIcon"></i>
+      </a>
+    </div>
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu-content">
+        <a href="#" id="mobileMenuClose">
+          HOME <i class="fas fa-times fa-2x"></i>
+        </a>
+        <div class="mobile-dropdown">
+          <a href="footer/allproduct.html" class="mobile-shop-link">SHOP</a>
+          <button
+            type="button"
+            class="mobile-dropdown-toggle"
+            id="mobileShopToggle"
+            aria-label="Tampilkan kategori"
+          >
+            <i class="fas fa-plus" id="mobileShopIcon"></i>
+          </button>
+          <div class="mobile-dropdown-content" id="mobileShopDropdown">
+            <a href="#">Hat</a>
+            <a href="#">T-Shirt</a>
+            <a href="#">Sweater</a>
+            <a href="#">Jacket</a>
+            <a href="#">Pants</a>
+            <a href="#">Boots</a>
+            <a href="#">Handmade</a>
+          </div>
+        </div>
+        <hr class="mobile-divider" />
+        <a href="footer/sizechart.html" class="mobile-submenu">Size Chart</a>
+        <a href="footer/feedback.html" class="mobile-submenu">Send Feedback</a>
+      </div>
+    </div>
+    </nav>
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-image">
+        <img src="hero/bungabrx.png" alt="Hero 1" class="hero-img-left" />
+        <img src="hero/dauntmt.PNG" alt="Hero 2" class="hero-img-right" />
+      </div>
+      <div class="hero-content">
+        <h1>Selamat Datang di Usaha Jaya</h1>
+        <p>
+          Tampil gaya, nyaman, dan percaya diri dengan koleksi terbaik kami.
+        </p>
+        <a href="html/allproduct.html" class="hero-btn">Belanja Sekarang</a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-columns">
+          <div class="footer-left">
+            <ul>
+              <li><a href="footer/store.html">STORE</a></li>
+              <li><a href="footer/sizechart.html">SIZE CHART</a></li>
+              <li><a href="footer/feedback.html">SEND FEEDBACK</a></li>
+            </ul>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li>
+                <a href="#">ABOUT<span ></span></a>
+              </li>
+              <li>
+                <a href="#">HELP<span></span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <a href="https://instagram.com/youjei.id" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com/usahajaya.id" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://youtube.com/@usahajaya.id" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://wa.me/62881080151102" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="footer-bottom">
+        <p>youjei | 2026</p>
+        <div class="footer-links">
+          <a href="#">How to Order</a>
+          <span>|</span>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!-- java script -->
+    <script src="script.js"></script>
+  </body>
+</html>

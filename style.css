@@ -1,0 +1,218 @@
+:root {
+  --primary: #022b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #ffffff;
+}
+
+/* backgroound alalaliquid glass */
+.navbar,
+.dropdown-content {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* navbar for desktop ========================================*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  background: var(--primary);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: transform 0.7s cubic-bezier(0.4, 1, 0.5, 1), opacity 0.7s;
+  padding-top: env(safe-area-inset-top);
+}
+.navbar.hide {
+  transform: translateY(-100%); /*navbar hilang*/
+}
+.logo {
+  width: 40px;
+  height: auto;
+  padding-top: 5px;
+}
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+.shop-link {
+  margin-right: 4px;
+  color: white;
+}
+.navbar .navbar-nav > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.navbar-extra a {
+  color: white;
+  margin-left: 15px;
+}
+/* dropdown */
+.dropdown {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.dropdown-content a {
+  color: white;
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid transparent; /*border transparan supaya tidak menggeser layout*/
+  transition: transform 0.2s ease, background-color 0.2s ease,
+    box-shadow 0.2s ease;
+  will-change: transform;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* mobile bottom bar ========*/
+
+/* hero section */
+.hero-section {
+  min-height: 500px;
+}
+/* footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 40px 20px;
+  font-size: 15px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer-left li a,
+.footer-middle li a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.footer-middle li span {
+  float: right;
+}
+/* right */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-right a {
+  width: 36px;
+  height: 36px;
+  color: black;
+  background: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(9px, 1vw, 12px);
+  margin-bottom: 20px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+.footer-bottom > span {
+  text-align: left;
+}
+.footer-bottom p,
+.footer-links a {
+  color: rgb(128, 128, 255);
+}
+.footer-links span {
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  /* navigation bar */
+
+  /* footer */
+  .footer-columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-middle {
+    text-align: right;
+  }
+  .footer-right {
+    justify-content: center;
+    width: 100%;
+  }
+  .footer-right a {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .footer-bottom {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
