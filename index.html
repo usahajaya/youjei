@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <meta name="theme-color" content="#022b00"/>
+    <meta name="theme-color" content="#022b00" />
 
     <title>youjei</title>
     <!-- style -->
@@ -30,78 +30,7 @@
   <body>
     <!-- navigation bar -->
     <!-- navbar desktop -->
-    <nav class="navbar">
-      <img src="youjei.png" alt="youjei" class="logo" />
-      <div class="navbar-nav">
-        <a href="#">HOME</a>
-        <div class="dropdown">
-          <a href="html/allproduct.html" class="shop-link">SHOP</a>
-          <span class="dropbtn" tabindex="0">
-            <i class="fas fa-angle-down fa-xs"></i>
-          </span>
-          <div class="dropdown-content" id="dropdownMenu">
-            <a href="product/hat.html">Hat</a>
-            <a href="product/t-shirt.html">T-Shirt</a>
-            <a href="product/sweater.html">Sweater</a>
-            <a href="product/jacket.html">Jacket</a>
-            <a href="product/pants.html">Pants</a>
-            <a href="product/boots.html">Boots</a>
-            <a href="product/handmade.html">Handmade</a>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-extra">
-        <a href="#" class="search-btn"><i class="fas fa-search fa-2x"></i></a>
-        <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-        <a href="#"><i class="fas fa-heart fa-2x"></i></a>
-        <a href="#" class="hamburger-menu"><i class="fas fa-bars fa-2x"></i></a>
-      </div>
-    </nav>
-    <!-- navbar mobile -->
-    <nav>
-      <div class="mobile-bottom-bar">
-      <form class="mobile-search-form">
-        <input type="text" placeholder="Cari..." />
-        <button type="submit">
-          <i class="fas fa-search" style="color: white"></i>
-        </button>
-      </form>
-      <a href="#" class="hamburger-menu" id="mobileMenuBtn">
-        <i class="fas fa-bars fa-2x" id="menuIcon"></i>
-      </a>
-    </div>
-    <!-- Mobile menu overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-      <div class="mobile-menu-content">
-        <a href="#" id="mobileMenuClose">
-          HOME <i class="fas fa-times fa-2x"></i>
-        </a>
-        <div class="mobile-dropdown">
-          <a href="footer/allproduct.html" class="mobile-shop-link">SHOP</a>
-          <button
-            type="button"
-            class="mobile-dropdown-toggle"
-            id="mobileShopToggle"
-            aria-label="Tampilkan kategori"
-          >
-            <i class="fas fa-plus" id="mobileShopIcon"></i>
-          </button>
-          <div class="mobile-dropdown-content" id="mobileShopDropdown">
-            <a href="#">Hat</a>
-            <a href="#">T-Shirt</a>
-            <a href="#">Sweater</a>
-            <a href="#">Jacket</a>
-            <a href="#">Pants</a>
-            <a href="#">Boots</a>
-            <a href="#">Handmade</a>
-          </div>
-        </div>
-        <hr class="mobile-divider" />
-        <a href="footer/sizechart.html" class="mobile-submenu">Size Chart</a>
-        <a href="footer/feedback.html" class="mobile-submenu">Send Feedback</a>
-      </div>
-    </div>
-    </nav>
+    <div id="nav"></div>
     <!-- hero section -->
     <section class="hero-section">
       <div class="hero-image">
@@ -110,63 +39,41 @@
       </div>
       <div class="hero-content">
         <h1>Selamat Datang di Usaha Jaya</h1>
-        <p>
-          Tampil gaya, nyaman, dan percaya diri dengan koleksi terbaik kami.
-        </p>
+        <p></p>
         <a href="html/allproduct.html" class="hero-btn">Belanja Sekarang</a>
       </div>
     </section>
+    <!-- about -->
+    <section id="about">
+      <h1>ABOUT</h1>
+      <p>
+        YOUJEI is a brand born from a family story. Established around 2024,
+        YOUJEI was created by the children of a small business owner whose
+        family business, UJ (Usaha Jaya), has been operating since 2002 as a
+        vegetable trading business in Lembang, Bandung, West Java. The name
+        YOUJEI comes from the English pronunciation of the letters U and J,
+        which still refers to UJ. The name was chosen because “UJ” had already
+        been used by another brand. Between 2023 and 2026, UJ faced difficult
+        times. A decline in vegetable supply, the loss of partnerships with
+        farmers, and changing economic conditions led to operational and
+        financial challenges. Some farmers sold their land, while others started
+        their own businesses. These challenges greatly affected the business,
+        especially with operational assets that still required maintenance and
+        taxes despite reduced activity. YOUJEI was not created to replace UJ,
+        but to continue the values, responsibility, and spirit that had been
+        built before. While UJ focuses on agriculture and vegetables, YOUJEI
+        focuses on apparel. Both exist side by side. We strive to run this brand
+        with honesty and care. Every product is made with intention, using
+        materials and printing methods that match their description, because
+        trust matters to us.
+      </p>
+    </section>
     <!-- footer -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-columns">
-          <div class="footer-left">
-            <ul>
-              <li><a href="footer/store.html">STORE</a></li>
-              <li><a href="footer/sizechart.html">SIZE CHART</a></li>
-              <li><a href="footer/feedback.html">SEND FEEDBACK</a></li>
-            </ul>
-          </div>
-          <div class="footer-middle">
-            <ul>
-              <li>
-                <a href="#">ABOUT<span ></span></a>
-              </li>
-              <li>
-                <a href="#">HELP<span></span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-right">
-            <a href="https://instagram.com/youjei.id" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://facebook.com/usahajaya.id" target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="https://youtube.com/@usahajaya.id" target="_blank"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="https://wa.me/62881080151102" target="_blank"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </div>
-        </div>
-        <hr />
-      </div>
-
-      <div class="footer-bottom">
-        <p>youjei | 2026</p>
-        <div class="footer-links">
-          <a href="#">How to Order</a>
-          <span>|</span>
-          <a href="#">Terms of Use</a>
-          <span>|</span>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-    </footer>
+   <div id="footer"></div>
     <!-- java script -->
     <script src="script.js"></script>
+    <script>
+      loadComponents();
+    </script>
   </body>
 </html>
